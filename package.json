@@ -1,0 +1,30 @@
+{
+  "name": "express-essential",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Express JS essential learnings",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --experimental-json-modules --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdulhathi/express-essential.git"
+  },
+  "author": "Abdul Hathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdulhathi/express-essential/issues"
+  },
+  "homepage": "https://github.com/abdulhathi/express-essential#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.4"
+  }
+}
