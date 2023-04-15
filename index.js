@@ -10,7 +10,6 @@ app.get("/", (request, response) => {
 });
 
 // Post method
-
 app.post("/create", (request, response) => {
   response.send("This is the create/ post method.")
 })
@@ -24,3 +23,13 @@ app.get("/student/:id", (request, response) => {
 app.listen(PORT, () => {
   console.log(`Node js server is running in port : ${PORT}`); 
 })
+
+app.get("/next", (request, response, next) => {
+  console.log("The response will sent by the next functions.");
+  // setTimeout(next, 1000);
+  next();
+}, (request, response) => {
+  response.send("This is the response from next.")
+})
+
+app.use(express.static("image"))
