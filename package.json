@@ -3,9 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Express JS essential learnings",
-  "main": "index.js",
+  "main": "Throwing_Handling_Error.js",
   "scripts": {
-    "start": "nodemon --experimental-json-modules --exec babel-node index.js"
+    "start": "nodemon --experimental-json-modules --exec babel-node Throwing_Handling_Error.js",
+    "debug": "DEBUG=express:* nodemon --experimental-json-modules --exec babel-node Throwing_Handling_Error.js"
   },
   "repository": {
     "type": "git",
